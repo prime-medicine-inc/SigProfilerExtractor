@@ -1152,7 +1152,7 @@ def dendrogram(data, threshold, layer_directory):
     plt.title("Clustering of Samples Based on Mutational Signatures")
     plt.ylabel("Cosine Distance")
     plt.xlabel("Sample IDs")
-    plt.savefig(layer_directory + '/dendrogram.pdf', figsize=(10, 8), dpi=300)
+    plt.savefig(layer_directory + '/dendrogram.pdf', figsize=(10, 8), dpi=300, bbox_inches='tight')
 
     # which datapoints goes to which cluster
     # The indices of the datapoints will be displayed as the ids 
